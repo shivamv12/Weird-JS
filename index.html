@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="images/x-ico" href="https://cdn.iconscout.com/icon/free/png-256/javascript-23-1174949.png" />
-  <title>Weird JS</title>
+  <title>Weird Behavior of JS</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style>
     body {
       background-color: white;
+      text-align: justify;
     }
 
     .img {
@@ -26,7 +28,7 @@
     <div class="row mt-3">
       <div class="col-md-12">
         <h1># The Weird Parts of JavaScript</h1>
-        <img src="https://i.ytimg.com/vi/LYFTGQuwlh8/maxresdefault.jpg" class="img img-thumbnail mt-4">
+        <img src="https://miro.medium.com/max/6300/1*FsqitFvksKYy8Lu3jCQR9w.png" class="img img-thumbnail mt-4">
       </div>
       <div class="col-md-12 mt-5 text-justify">
         <p>We all know that JavaScript is quite a funny language with tricky parts. Some of them can quickly turn our
@@ -195,11 +197,100 @@
             <tr>
               <td>13. </td>
               <td>
-                <div class="row text-left">
-                  <div class="col-md-6"> console.log("11" + 1); console.log("11" - 1);</div>
-                  <div class="col-md-6 text-right">Can you guess the <b>Output</b>?</div>
+                <div class="row">
+                  <div class="col-md-4">Does JS have types?</div>
+                  <div class="col-md-3">OR</div>
+                  <div class="col-md-5">Data Types in Javascript</div>
+                  <div class="col-md-10 offset-md-1 mt-3">
+                    Some may argue that JS is <b>Untyped</b> or that it shouldn’t call its type system types. It doesn’t
+                    require you to declare a type when making a variable like in some other strongly typed languages i.e
+                    int x = 10.<br />But, I would argue that JS does have types.
+                  </div>
+                  <div class="text-secondary mt-3 mb-2 col-md-12"><i>JS is both <b>dynamically typed</b> and <b>weakly
+                        typed</b>.</i></div>
+                  <div class="col-md-12">let's discuss more about Static typed & Dynamic typed language.</div>
                 </div>
               </td>
+            </tr>
+            <tr>
+              <td>14. </td>
+              <td>
+                <div class="row">
+                  <div class="col-md-12">Statically Typed ~</div>
+                  <div class="col-md-10 offset-md-1">
+                    JS is not statically typed unless you’re using a language, tool such as Typescript or Flow that
+                    compiles to JS code. Statically typed means the type is enforced and won’t change so easily. All
+                    variables must be declared with a type. <br />
+                    int x = 5; <br />
+                    string y = 'abc';
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>15. </td>
+              <td>
+                <div class="row">
+                  <div class="col-md-12">Dynamically Typed ~</div>
+                  <div class="col-md-10 offset-md-1">
+                    Dynamically typed languages infer variable types at runtime. This means once your code is run the
+                    compiler/interpreter will see your variable and its value then decide what type it is. The type is
+                    still enforced here, it just decides what the type is. <br />
+                    var a = 1 // int<br />
+                    var b = 'test' // string
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>16. </td>
+              <td>
+                <div class="row">
+                  <div class="col-md-12">Weakly Typed ~</div>
+                  <div class="col-md-10 offset-md-1">
+                    Weakly typed languages allow types to be inferred as another type. For example,<br />
+                    <span class="text-secondary">console.log(1 + '2'); // '12'</span><br />
+                    In JS, it sees you’re trying to add a number with a string — an invalid operation — so it coerces
+                    your number
+                    into a string and results in the string ‘12’.
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>17. </td>
+              <td>
+                <div class="row">
+                  <div class="col-md-12">Primitives Data Types in JS.</div>
+                  <div class="col-md-10 offset-md-1">
+                    There are six types, considered to be Primitives.
+                    A primitive is not an object and has no methods of its own. All primitives are immutable.<br/>
+                    <span class="text-secondary">Boolean — true or false<br/>
+                    Null — no value<br/>
+                    Undefined — a declared variable but hasn’t been given a value<br/>
+                    Number — integers, floats, etc<br/>
+                    String — an array of characters i.e words<br/>
+                    Symbol — a unique value that's not equal to any other value<br/></span>
+                    Everything else is an Object type.<br/>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>18. </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>19. </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>20. </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>21. </td>
+              <td></td>
             </tr>
           </tbody>
         </table>
@@ -207,4 +298,5 @@
     </div>
   </div>
 </body>
+
 </html>
